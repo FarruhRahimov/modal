@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <!-- font afsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <button class="btn show-btn" id="show-btn">Show Modal</button>
+
+      <!-- modal -->
+      <div class="modal hidden" id="modal">
+        <!-- modal header -->
+        <div class="modal-header">
+          <h3>I love winter</h3>
+          <button class="btn close-btn" id="close-btn">
+            <i class="fas fa-close"></i>
+          </button>
+        </div>
+        <!-- modal body -->
+        <div class="modal-body">
+          <h2 class="modal-title">Modal Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis amet
+            iste eveniet nisi corporis recusandae nostrum necessitatibus earum,
+            reiciendis eaque iusto a odit magni quia suscipit porro minima vitae
+            ratione ea officia accusantium ad culpa eos distinctio. Deserunt ab
+            doloremque iure aperiam eum, molestias excepturi.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- overlay -->
+    <div class="overlay hidden" id="overlay"></div>
+    <!-- js -->
+    <script src="./app.js"></script>
+  </body>
+</html>
